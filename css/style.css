@@ -80,21 +80,27 @@ li {
     }
 }
 
-.boton-enviar {
+.boton {
     background: linear-gradient(135deg, #2563eb, #dc2626);
     color: #ffffff;
     display: block;
     width: 100%;
     text-transform: uppercase;
+    text-align: center;
     font-weight: 700;
+    cursor: pointer;
+    border-radius: 1rem;
     cursor: pointer;
 }
 
+.boton:hover {
+    background: linear-gradient(135deg, #1d4ed8, #b91c1c);
+}
+
 @media (min-width: 768px) {
-    .boton-enviar {
+    .boton {
         width: auto;
         padding: 1rem 3rem;
-
     }
 }
 
@@ -186,6 +192,7 @@ footer {
     padding: 2rem;
 }
 
+/* SCROLL CONTENIDO MAIN */
 .main .contenido {
     overflow-y: auto;
     overflow-x: hidden;
@@ -209,7 +216,10 @@ footer {
     background-color: rgba(255, 255, 255, 0.6);
 }
 
+/* ==================== */
+/* nuevo-cliente-html; editar-cliente.html*/
 /* NUEVO CLIENTE */
+/* ==================== */
 
 .campos {
     display: flex;
@@ -239,4 +249,95 @@ input {
     padding: 1rem;
     border: none;
     border-radius: 1rem;
+}
+
+
+/* ==================== */
+/* index.html */
+/* DISEÑO DE LA TABLA */
+/* ==================== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid var(--gris);
+    padding: .5rem;
+    text-align: center;
+}
+
+th {
+    color: var(--gris);
+}
+
+td {
+    color: var(--blanco);
+}
+
+@media (max-width: 768px) {
+
+    table,
+    thead,
+    tbody,
+    tr,
+    td {
+        display: block;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tr {
+        border: 1px solid var(--gris);
+        border-radius: 1rem;
+        margin-bottom: 10px;
+    }
+
+    th, td {
+        border: none;
+        text-align: center;
+    }
+
+    td {
+        margin-top: 1rem;
+    }
+
+    td::before {
+        content: attr(data-label);
+        font-weight: bold;
+    }
+}
+
+.botones-accion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 90%;
+    margin: 10px auto;
+}
+
+.botones-accion a {
+    display: block;
+    padding: .5rem 1rem;
+    background: #1d4ed8;
+}
+
+.botones-accion a:hover {
+    background: var(--azul);
+}
+
+.botones-accion .eliminar {
+    background: #b91c1c;
+}
+
+.botones-accion .eliminar:hover {
+    background: var(--rojo);
+}
+
+#listado-contactos p {
+    margin: 10px 0;
 }
