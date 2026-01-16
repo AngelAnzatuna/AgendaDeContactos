@@ -1,4 +1,5 @@
 import { validar, mostrarAlerta } from "./funciones.js";
+import { guardarContacto } from "./API.js";
 
 (function () {
     const formulario = document.querySelector('#formulario');
@@ -25,7 +26,7 @@ import { validar, mostrarAlerta } from "./funciones.js";
             return;
         };
 
-        console.log(contacto)
+        guardarContacto(contacto);
     }
 
 })();
