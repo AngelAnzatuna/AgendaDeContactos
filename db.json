@@ -1,13 +1,6 @@
 {
   "contactos": [
     {
-      "id": "c47f",
-      "nombre": "Angel",
-      "telefono": "09123456789",
-      "categoria": "Familia",
-      "email": "angel@correo.co"
-    },
-    {
       "id": "6b1a",
       "nombre": "Isis",
       "telefono": "09789456123",

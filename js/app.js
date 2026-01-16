@@ -1,8 +1,9 @@
-import { obtenerContactos } from "./API.js";
+import { obtenerContactos, eliminarContacto } from "./API.js";
 
 (function() {
 
     const listadoContactos = document.querySelector('#listado-contactos');
+    listadoContactos.addEventListener('click', contactoEliminar);
 
     document.addEventListener('DOMContentLoaded', mostrarContactos);
 
@@ -28,7 +29,17 @@ import { obtenerContactos } from "./API.js";
             `;
 
             listadoContactos.append(row);
-        })
-        
+        })   
+    }
+
+    function contactoEliminar(e) {
+        if(e.target.classList.contains('eliminar')){
+            const idContacto = e.target.dataset.contacto;
+
+            const confirmar = confirm('Deseas eliminar este contacto?');
+            if(confirmar) {
+                eliminarContacto(idContacto);
+            }
+        };
     }
 })();

@@ -24,3 +24,13 @@ export const obtenerContactos = async () => {
         console.log(error)
     }
 }
+
+export const eliminarContacto = async id => {
+    try {
+        await fetch(`${url}/${id}`, {
+            method: 'DELETE'
+        })
+    } catch(error) {
+        console.log(error);
+    }
+}
