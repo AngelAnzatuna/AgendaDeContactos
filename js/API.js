@@ -14,3 +14,13 @@ export const guardarContacto = async contacto => {
         console.log(error);
     }
 }
+
+export const obtenerContactos = async () => {
+    try {
+        const resultado = await fetch(url);
+        const contactos = await resultado.json();
+        return contactos;
+    } catch(error) {
+        console.log(error)
+    }
+}
