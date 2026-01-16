@@ -34,3 +34,14 @@ export const eliminarContacto = async id => {
         console.log(error);
     }
 }
+
+export const obtenerContacto = async id => {
+    try {
+        const resultado = await fetch(`${url}/${id}`);
+        const contacto = await resultado.json();
+        return contacto;
+
+    } catch(error) {
+        console.log(error);
+    }
+}

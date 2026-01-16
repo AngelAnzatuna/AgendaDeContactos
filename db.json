@@ -6,6 +6,13 @@
       "telefono": "09789456123",
       "categoria": "Escuela",
       "email": "isis@correo.com"
+    },
+    {
+      "id": "8740",
+      "nombre": "Angel",
+      "telefono": "09123456789",
+      "categoria": "Familia",
+      "email": "angel@correo.co"
     }
   ]
 }
