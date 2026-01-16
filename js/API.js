@@ -45,3 +45,18 @@ export const obtenerContacto = async id => {
         console.log(error);
     }
 }
+
+export const actualizarContacto = async contacto => {
+    try {
+        await fetch(`${url}/${contacto.id}`, {
+            method: 'PUT',
+            body: JSON.stringify(contacto),
+            headers: {
+                'Type-Content': 'application/json'
+            }
+        });
+        window.location.href = 'index.html';
+    } catch(error) {
+        console.log(error);
+    }
+}

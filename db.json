@@ -1,18 +1,18 @@
 {
   "contactos": [
     {
-      "id": "6b1a",
-      "nombre": "Isis",
-      "telefono": "09789456123",
-      "categoria": "Escuela",
-      "email": "isis@correo.com"
+      "nombre": "Angel Alexis",
+      "telefono": "09123456789",
+      "categoria": "Trabajo",
+      "email": "angel@correo.co",
+      "id": "8740"
     },
     {
-      "id": "8740",
-      "nombre": "Angel",
-      "telefono": "09123456789",
-      "categoria": "Familia",
-      "email": "angel@correo.co"
+      "id": "f4e3",
+      "nombre": "Danna",
+      "telefono": "0798546334",
+      "categoria": "Instituto",
+      "email": "danna@correo.com"
     }
   ]
 }
